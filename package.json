@@ -1,0 +1,39 @@
+{
+  "name": "clank",
+  "version": "1.0.0",
+  "description": "CLANK - The Consciousness Bridging Layer with Proactive AI Learning",
+  "main": "clank/main_with_proactive.js",
+  "bin": {
+    "clank": "./clank/main_with_proactive.js"
+  },
+  "scripts": {
+    "start": "sudo node clank/main_with_proactive.js",
+    "dev": "node clank/main_with_proactive.js",
+    "test": "node clank/tests/sandbox_test.js"
+  },
+  "keywords": [
+    "ai",
+    "automation",
+    "local-llm",
+    "consciousness",
+    "workflow",
+    "proactive"
+  ],
+  "author": "Marcus Anthony Seaton",
+  "license": "MIT",
+  "dependencies": {
+    "sqlite3": "^5.1.7",
+    "node-cron": "^3.0.3",
+    "chokidar": "^3.6.0",
+    "chalk": "^4.1.2",
+    "axios": "^1.6.8",
+    "robotjs": "^0.6.0",
+    "node-pty": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
