@@ -1,0 +1,47 @@
+{
+  "name": "clank-voice",
+  "version": "1.0.0",
+  "description": "CLANK Voice Daemon - Invisible AI with voice-only interface",
+  "main": "voice_daemon.js",
+  "bin": {
+    "clank-voice": "./voice_daemon.js"
+  },
+  "scripts": {
+    "start": "sudo node voice_daemon.js",
+    "dev": "node voice_daemon.js",
+    "install-deps": "./install_voice_deps.sh"
+  },
+  "keywords": [
+    "voice",
+    "ai",
+    "tts",
+    "stt",
+    "invisible",
+    "daemon"
+  ],
+  "author": "Marcus Anthony Seaton",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.8"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "systemDependencies": {
+    "linux": [
+      "alsa-utils (arecord/aplay)",
+      "espeak or piper-tts",
+      "whisper.cpp or vosk",
+      "ollama (for mini-models)"
+    ],
+    "macos": [
+      "sox",
+      "say (built-in)",
+      "whisper.cpp",
+      "ollama"
+    ],
+    "windows": [
+      "WSL + Linux deps"
+    ]
+  }
+}
