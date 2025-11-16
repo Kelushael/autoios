@@ -1,0 +1,23 @@
+{
+  "name": "clank-autoios",
+  "version": "1.0.0",
+  "description": "CLANK - Consciousness Bridging Layer with Proactive Automation",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "daemon": "sudo node daemon/index.js",
+    "test": "node test/sandbox.js"
+  },
+  "keywords": ["ai", "automation", "consciousness", "daemon", "local-llm"],
+  "author": "Marcus Anthony Seaton",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^9.2.2",
+    "axios": "^1.6.5",
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.12",
+    "node-watch": "^0.7.4",
+    "chokidar": "^3.5.3"
+  }
+}
